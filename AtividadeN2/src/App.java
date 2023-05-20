@@ -1,4 +1,6 @@
+import br.com.biblioteca.teste.AutorTeste;
 import br.com.biblioteca.teste.ColecaoTeste;
+import br.com.biblioteca.teste.LivroTeste;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -8,13 +10,14 @@ public class App {
 
         System.out.println();
 
-        // LivroTeste teste2 = new LivroTeste();
-        // teste2.Executar();
+        LivroTeste teste2 = new LivroTeste();
+        teste2.Executar();
 
-        // System.out.println();
+        System.out.println();
 
-        // AutorTeste teste3 = new AutorTeste();
-        // teste3.Executar();
+        AutorTeste teste3 = new AutorTeste();
+        teste3.Executar();
 
     }
+    
 }

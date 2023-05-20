@@ -1,5 +1,6 @@
 package br.com.biblioteca.teste;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import br.com.biblioteca.dominio.Autor;
@@ -26,7 +27,7 @@ public class AutorTeste extends BaseTeste<Autor> {
     protected int TestarCriacao() {
         System.out.println("Agora testando Create: ");
 
-        Autor cat = new Autor("Autor01", "Sobrenome01");
+        Autor cat = new Autor(1, "Autor 01", LocalDate.now(), "Nome 01", "Sobrenome 01");
         Autor novo = this.servico.Criar(cat);
 
         System.out.println(novo.toString());

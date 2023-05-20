@@ -41,9 +41,4 @@ public abstract class BaseBiblioteca {
         this.dataCadastro = dataCadastro;
     }
 
-    @Override
-    public String toString() {
-        return "BaseBiblioteca [codigo=" + codigo + ", descricao=" + descricao + ", dataCadastro=" + dataCadastro + "]";
-    }
-
 }

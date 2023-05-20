@@ -27,7 +27,7 @@ public class LivroTeste extends BaseTeste<Livro> {
     protected int TestarCriacao() {
         System.out.println("Agora testando Create: ");
 
-        Livro cat = new Livro(1, "Colecao01", LocalDate.now(), "SBN01", 1, "Título01");
+        Livro cat = new Livro(1, "Livro 01", LocalDate.now(), "SBN 01", 1, "Título 01");
         Livro novo = this.servico.Criar(cat);
 
         System.out.println(novo.toString());

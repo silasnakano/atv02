@@ -28,24 +28,14 @@ public class Colecao extends BaseBiblioteca {
     public Colecao() {
     }
 
-    public Colecao(String editora) {
-        this.editora = editora;
-    }
-
-    public Colecao(int codigo, String descricao, LocalDate dataCadastro, String editora, List<Livro> livro) {
+    public Colecao(int codigo, String descricao, LocalDate dataCadastro, String editora) {
         super(codigo, descricao, dataCadastro);
         this.editora = editora;
     }
 
     @Override
     public String toString() {
-        String s = "";
-        s += "Colecao ";
-        s += "[Codigo = " + this.codigo + ",";
-        s += "Descrica = " + this.descricao + ",";
-        s += "Editora = " + this.editora + "]";
-        return s;
-        // return "Colecao [editora=" + editora + "]";
+        return "Colecao [editora=" + editora + "]";
     }
 
 }

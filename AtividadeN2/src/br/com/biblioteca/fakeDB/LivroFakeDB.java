@@ -8,11 +8,9 @@ public class LivroFakeDB extends BaseFakeDB<Livro> {
 
     @Override
     public void AutoFill() {
-        this.tabela.add(new Livro(1, "Livro1", LocalDate.now(), "SBN01", 1, "Livro01"));
-        this.tabela.add(new Livro(2, "Livro2", LocalDate.now(), "SBN02", 1, "Livro02"));
-        this.tabela.add(new Livro(3, "Livro3", LocalDate.now(), "SBN03", 1, "Livro03"));
-        // this.tabela.add(new Livro("SBN02", 2, "Título02"));
-        // this.tabela.add(new Livro("SBN03", 3, "Título03"));
+        this.tabela.add(new Livro(1, "Livro 01", LocalDate.now(), "SBN 01", 1, "Título 01"));
+        this.tabela.add(new Livro(2, "Livro 02", LocalDate.now(), "SBN 02", 2, "Título 02"));
+        this.tabela.add(new Livro(3, "Livro 03", LocalDate.now(), "SBN 03", 3, "Título 03"));
     }
 
 }

@@ -24,12 +24,6 @@ public class Autor extends BaseBiblioteca {
     }
 
     public Autor() {
-
-    }
-
-    public Autor(String nome, String sobreNome) {
-        this.nome = nome;
-        this.sobreNome = sobreNome;
     }
 
     public Autor(int codigo, String descricao, LocalDate dataCadastro, String nome, String sobreNome) {

@@ -1,5 +1,6 @@
 package br.com.biblioteca.teste;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import br.com.biblioteca.dominio.Colecao;
@@ -26,7 +27,7 @@ public class ColecaoTeste extends BaseTeste<Colecao> {
     protected int TestarCriacao() {
         System.out.println("Agora testando Create: ");
 
-        Colecao cat = new Colecao("Editora01");
+        Colecao cat = new Colecao(1, "Coleção 01", LocalDate.now(), "Editora 01");
         Colecao novo = this.servico.Criar(cat);
 
         System.out.println(novo.toString());
